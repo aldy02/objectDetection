@@ -1,38 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
+  background: url(../public/background.jpg);
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+#header {
+  margin: 25px 0 40px 0;
+  font-family: "Lobster", cursive;
+  font-size: 60px;
+  color: #be29ef;
+  text-shadow: 3px 3px white;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 72% auto;
+  width: 100%;
+}
+
+.camera {
+  margin-left: 60px;
+}
+
+#dataTest {
+  background-color: #ba8bdb;
+  padding: 33px 14px 14px 14px;
+  border-radius: 8px;
+}
+
+.resultContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 60px;
+  text-align: center;
+}
+
+.resultBox {
+  background-color: #BA8BDB;
+  border: 2px solid black;
+  width: 100%;
+  border-radius: 10px;
   color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+#resultHeader{
+  padding-top: 10px;
+  padding-bottom: 15px;
+  font-size: 30px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.resultBody {
+  background-color: #EBE8F5;
+  padding-top: 20px;
+  height: 370px;
+  border-radius: 10px;
+  color: black;
+
+}
+
+#textResult {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 18px;
+}
+
+#btnCheck {
+  background-color: #BA8BDB;
+  color: white;
+  padding: 14px 0 14px 0;
+  width: 100%;
+  font-size: 30px;
+  border-radius: 200px;
+  border: none;
+  margin-top: 70px;
+  font-weight: 500;
 }
