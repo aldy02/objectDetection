@@ -53,7 +53,7 @@ function App() {
             <h2 id="resultHeader">RESULT</h2>
             <div className="resultBody">
               {objectResult?.map((result, index) => (
-                <p id="textResult" key={index}>{`${result.class} acuracy ${(result.score*100).toFixed(2)}%`}</p>
+                <p id="textResult" key={index}>{`${result.class} accuracy ${(result.score*100).toFixed(2)}%`}</p>
               ))}
             </div>
           </div>
